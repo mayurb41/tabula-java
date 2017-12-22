@@ -289,7 +289,7 @@ public class CommandLineApp {
                 .build());
         o.addOption(Option.builder("f")
                 .longOpt("format")
-                .desc("Output format: (" + Utils.join(",", OutputFormat.formatNames()) + "). Default: CSV")
+                .desc("Output format: (" + Utils.join("|", OutputFormat.formatNames()) + "). Default: CSV")
                 .hasArg()
                 .argName("FORMAT")
                 .build());
